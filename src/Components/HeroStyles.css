@@ -41,10 +41,11 @@
 
 .btn{
     background:#f4ce14;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
     border: none;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .hero-img {

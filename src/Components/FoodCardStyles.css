@@ -1,0 +1,67 @@
+.food-specials {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.food-card{
+    background-color: #edefee;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.food-card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.top h1 {
+    color: black;
+    font-family: markazi;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.top .btn {
+    padding: 20px 40px 20px 40px;
+}
+
+.food-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+/* .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+
+.bottom .food-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.bottom .food-description {
+    padding: 0px 20px 10px 20px;
+}
+
+.bottom .food-order{
+    display: flex;
+    align-items: center;
+}
+
+.bottom .food-order h3{
+    padding: 20px;
+}
