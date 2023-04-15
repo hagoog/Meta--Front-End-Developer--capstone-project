@@ -14,15 +14,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+    padding-bottom: 80px;
 }
 
 
 .testimonials-head {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     color: #f4ce14;
     font-family: markazi;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .testimonials-card{
