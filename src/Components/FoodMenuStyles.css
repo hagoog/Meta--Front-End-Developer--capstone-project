@@ -1,0 +1,8 @@
+.food-menu {
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 40px;
+}

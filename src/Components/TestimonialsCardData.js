@@ -7,7 +7,7 @@ import {BsStarFill, BsStar, BsStarHalf} from 'react-icons/bs'
 const TestimonialsCardData = [
     {
         userPhoto: P1,
-        testionmialsUser: "Cristiano Penaldo",
+        testimonialsUser: "Cristiano Penaldo",
         testimonialsRating:[
         <BsStarFill style={{color:"#f4ce14"}} size={30} />,<BsStarFill style={{color:"#f4ce14"}} size={30} />,
         <BsStarFill style={{color:"#f4ce14"}} size={30} />,
@@ -18,7 +18,7 @@ const TestimonialsCardData = [
     },
     {
         userPhoto: P2,
-        testionmialsUser: "Cristiano Penaldo",
+        testimonialsUser: "Cristiano Penaldo",
         testimonialsRating:[
         <BsStarFill style={{color:"#f4ce14"}} size={30} />,
         <BsStarFill style={{color:"#f4ce14"}} size={30} />,
@@ -29,7 +29,7 @@ const TestimonialsCardData = [
     },
     {
         userPhoto: P3,
-        testionmialsUser: "Cristiano Penaldo",
+        testimonialsUser: "Cristiano Penaldo",
         testimonialsRating:[
             <BsStarFill style={{color:"#f4ce14"}} size={30} />,
             <BsStarFill style={{color:"#f4ce14"}} size={30} />,

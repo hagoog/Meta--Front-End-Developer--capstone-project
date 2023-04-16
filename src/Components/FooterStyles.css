@@ -37,3 +37,19 @@
     color: white;
     padding: 5px;
 }
+
+@media screen and (max-width:1040px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links li {
+        text-align: center;
+        list-style: none;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .footer-container p {
+        text-align: center;
+    }
+}

@@ -2,7 +2,6 @@ import React from 'react'
 import "./Hero2Styles.css"
 import MarioandAdrianA from "../Assets/Images/Mario and Adrian A.jpg"
 import MarioandAdrianB from "../Assets/Images/Mario and Adrian b.jpg"
-import { Link } from 'react-router-dom'
 
 
 const Hero2 = () => {

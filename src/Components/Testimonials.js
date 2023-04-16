@@ -17,7 +17,7 @@ const Testimonials = () => {
                 <TestimonialsCard 
                 key={ind}
                 userPhoto={val.userPhoto}
-                testionmialsUser={val.testionmialsUser}
+                testimonialsUser={val.testimonialsUser}
                 testimonialsRating={val.testimonialsRating}
                 testimonalsDescription={val.testimonalsDescription}
                 />

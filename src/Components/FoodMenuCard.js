@@ -1,9 +1,8 @@
-import "./FoodCardStyles.css"
 import React from 'react'
-import { MdDeliveryDining } from "react-icons/md";
+import './FoodMenuStyles.css'
+import { MdDeliveryDining } from 'react-icons/md'
 
-
-const FoodCard = (props) => {
+const FoodMenuCard = (props) => {
   return (
     <section className="bottom">
     <article className="food-card">
@@ -26,4 +25,4 @@ const FoodCard = (props) => {
   )
 }
 
-export default FoodCard
+export default FoodMenuCard

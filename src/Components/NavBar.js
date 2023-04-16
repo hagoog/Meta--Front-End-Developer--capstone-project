@@ -4,6 +4,7 @@ import logo from "../Assets/Images/Logo.svg"
 import { Link } from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { useState } from "react";
+import {BiCartAdd} from 'react-icons/bi'
 
 const NavBar = () => {
     const [click,setClick] = useState(false);
