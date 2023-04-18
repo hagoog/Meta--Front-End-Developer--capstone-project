@@ -1,4 +1,88 @@
 .form-container {
   max-width: 1000px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+
+form label {
+  flex: 0 0 400px;
+  font-size: 20px;
+}
+
+form p {
+  flex: 0 0 400px;
+  font-size: 20px;
+}
+
+form input {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+form select {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.terms {
+  width: 800px;
+  display: flex;
+  padding-left: 150px;
+  align-items: center;
+}
+
+.terms input {
+  width: 20px;
+}
+
+.terms label {
+  width: 500px;
+  padding-left: 20px;
+  font-size: 15px;
+  flex: 0 0 600px;
+}
+.reserve {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+
+.reserve-btn {
+  background: #495e57;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  width: 300px;
+  height: 50px;
+}
+
+.cancel-btn {
+  background: #495e57;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  width: 300px;
+  height: 50px;
 }
