@@ -2,6 +2,7 @@ import React from "react";
 import "./ReservationFormStyles.css";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
+import { ErrorMessage } from "@hookform/error-message";
 
 const ReservationForm = (props) => {
   const form = useForm();
@@ -21,11 +22,16 @@ const ReservationForm = (props) => {
         <div className="form-element">
           <label htmlFor="branch">Select Branch *</label>
           <select
-            id="branch"
+            id="Branch"
             {...register("branch", {
               required: { value: true, message: "Please Select a Branch" },
             })}
           >
+            <ErrorMessage
+              errors={errors}
+              name="branch"
+              render={({ message }) => <p>{message}</p>}
+            />
             <option value="" selected disabled hidden>
               Select below
             </option>
@@ -50,9 +56,14 @@ const ReservationForm = (props) => {
               { valueAsDate: true }
             )}
           ></input>
+          <ErrorMessage
+            errors={errors}
+            name="reservationDate"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="form-element">
-          <p>Select Time *</p>
+          <h3>Select Time *</h3>
           <input
             type="radio"
             id="lunch"
@@ -72,6 +83,11 @@ const ReservationForm = (props) => {
             value="dinner"
           ></input>
           <label htmlFor="dinner">Dinner</label>
+          <ErrorMessage
+            errors={errors}
+            name="time"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="form-element">
           <label htmlFor="numberOfGuests">
@@ -98,6 +114,11 @@ const ReservationForm = (props) => {
               }
             )}
           ></input>
+          <ErrorMessage
+            errors={errors}
+            name="numberOfGuests"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="form-element">
           <label htmlFor="name">Full Name *</label>
@@ -108,6 +129,11 @@ const ReservationForm = (props) => {
               required: { value: true, message: "please enter your full name" },
             })}
           ></input>
+          <ErrorMessage
+            errors={errors}
+            name="name"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="form-element">
           <label htmlFor="email">E-Mail *</label>
@@ -118,6 +144,11 @@ const ReservationForm = (props) => {
               required: { value: true, message: "please enter your email" },
             })}
           ></input>
+          <ErrorMessage
+            errors={errors}
+            name="email"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="form-element">
           <label htmlFor="phoneNumber">Phone Number *</label>
@@ -131,6 +162,11 @@ const ReservationForm = (props) => {
               },
             })}
           ></input>
+          <ErrorMessage
+            errors={errors}
+            name="phoneNumber"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="form-element">
           <label htmlFor="specialRequest">Special Request</label>
@@ -155,6 +191,11 @@ const ReservationForm = (props) => {
           <label htmlFor="notice">
             <b>I agree with the terms and conditions and privacy policy.</b>
           </label>
+          <ErrorMessage
+            errors={errors}
+            name="notice"
+            render={({ message }) => <p>{message}</p>}
+          />
         </div>
         <div className="reserve">
           <button className="reserve-btn" type="submit">
